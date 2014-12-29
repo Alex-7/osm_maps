@@ -3,7 +3,7 @@
 Plugin Name: OpenStreetMap Maps
 Plugin URI: http://www.osclass.org/
 Description: This plugin shows an OpenStreetMap on the location space of every item.
-Version: 1.0
+Version: 1.0.1
 Author: Oleksiy Muzalyev
 Author URI: http://forums.osclass.org/index.php?action=profile;u=37193
 Plugin update URI: openstreetmaps-maps
@@ -67,7 +67,7 @@ Plugin update URI: openstreetmaps-maps
 		$address = implode ( ',', $addr_comp );
 				
 		
-		if ( $xml = simplexml_load_file ( sprintf ( 'http://open.mapquestapi.com/nominatim/v1/search.php?q=%s&format=xml&addressdetails=1', $address ) ) ) {
+		if ( $xml = simplexml_load_file ( sprintf ( 'http://open.mapquestapi.com/nominatim/v1/search.php?q=%s&format=xml&addressdetails=1&limit=1', $address ) ) ) {
 				
 			foreach ( $xml->place as $mpl ) {
 		
