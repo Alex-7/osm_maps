@@ -6,7 +6,7 @@ Description: This plugin shows an OpenStreetMap on the location space of every i
 Version: 1.0
 Author: Oleksiy Muzalyev
 Author URI: http://forums.osclass.org/index.php?action=profile;u=37193
-Plugin update URI: http://www.osclass.org/files/plugins/osm_maps/update.php
+Plugin update URI: openstreetmaps-maps
 */
 
 	function osm_maps_location() {
