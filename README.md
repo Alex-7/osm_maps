@@ -7,6 +7,9 @@ This plugin shows OpenStreetMap map for each item.
 
 It requires activated 
 allow_url_fopen = On
-in the server php.ini file (requires server restart)
+
+in the server php.ini file (requires server restart),
+
+as it uses simplexml_load_file function
 
 
