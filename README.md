@@ -10,6 +10,6 @@ allow_url_fopen = On
 
 in the server php.ini file (requires server restart),
 
-as it uses simplexml_load_file function
+as it uses simplexml_load_file PHP function
 
 
