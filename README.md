@@ -11,7 +11,7 @@ allow_url_fopen = On
 
 in the server php.ini file (requires server restart),
 
-as it uses simplexml_load_file PHP function.
+as it uses simplexml_load_file PHP function. It can be checked if it is activated via standard phpinfo(); call.
 
 If it is not activated, and if you have no access to php.ini file on the server, try to put: 
 
