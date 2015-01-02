@@ -24,3 +24,5 @@ Google Maps plugin should be deactivated before installation.
 If a house number is not mapped on the OpenStreetMap, one can add it on the map himself, as it is a wiki-style map (see www.osm.org for details).
 
 The license of the OpenStreetMap allows to use it for free for commercial projects, even with high traffic volumes.
+
+To install the plugin - zip index.php and map.php into osm_maps.zip archive.
