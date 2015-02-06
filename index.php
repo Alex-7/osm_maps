@@ -3,10 +3,10 @@
 Plugin Name: OpenStreetMap Maps
 Plugin URI: http://www.osclass.org/
 Description: This plugin shows an OpenStreetMap on the location space of every item.
-Version: 1.0.1
+Version: 1.0.2
 Author: Oleksiy Muzalyev
 Author URI: http://forums.osclass.org/index.php?action=profile;u=37193
-Plugin update URI: openstreetmaps-maps
+Plugin update URI: openstreetmaps-maps_2
 */
 
 	function osm_maps_location() {
@@ -30,7 +30,7 @@ Plugin update URI: openstreetmaps-maps
 			 
 	}
 
-	function OSM_insert_geo_location ( $item ) {
+	function osm_insert_geo_location ( $item ) {
 		
 		$itemId = $item['pk_i_id'];
 		
@@ -85,8 +85,8 @@ Plugin update URI: openstreetmaps-maps
 
 	osc_add_hook('location', 'osm_maps_location');
 
-	osc_add_hook('posted_item', 'OSM_insert_geo_location');
-	osc_add_hook('edited_item', 'OSM_insert_geo_location');
+	osc_add_hook('posted_item', 'osm_insert_geo_location');
+	osc_add_hook('edited_item', 'osm_insert_geo_location');
 	
 	osc_register_plugin(osc_plugin_path(__FILE__), '') ;
 
