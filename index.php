@@ -30,7 +30,7 @@ Plugin update URI: openstreetmaps-maps
 			 
 	}
 
-	function insert_geo_location ( $item ) {
+	function OSM_insert_geo_location ( $item ) {
 		
 		$itemId = $item['pk_i_id'];
 		
@@ -85,8 +85,8 @@ Plugin update URI: openstreetmaps-maps
 
 	osc_add_hook('location', 'osm_maps_location');
 
-	osc_add_hook('posted_item', 'insert_geo_location');
-	osc_add_hook('edited_item', 'insert_geo_location');
+	osc_add_hook('posted_item', 'OSM_insert_geo_location');
+	osc_add_hook('edited_item', 'OSM_insert_geo_location');
 	
 	osc_register_plugin(osc_plugin_path(__FILE__), '') ;
 
