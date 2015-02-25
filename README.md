@@ -27,4 +27,4 @@ The license of the OpenStreetMap allows to use it for free for commercial projec
 
 To install the plugin - zip index.php and map.php into osm_maps.zip archive.
 
-The plugin used MapQuest Open nominatim free API. Please, read usage policy http://developer.mapquest.com/web/products/open/nominatim
+The plugin used MapQuest Open nominatim free API. Please, read usage policy: http://developer.mapquest.com/web/products/open/nominatim
