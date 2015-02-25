@@ -26,3 +26,5 @@ If a house number is not mapped on the OpenStreetMap, one can add it on the map 
 The license of the OpenStreetMap allows to use it for free for commercial projects, even with high traffic volumes.
 
 To install the plugin - zip index.php and map.php into osm_maps.zip archive.
+
+The plugin used MapQuest Open nominatim free API. Please, read usage policy http://developer.mapquest.com/web/products/open/nominatim
