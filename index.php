@@ -3,11 +3,17 @@
 Plugin Name: OpenStreetMap Maps
 Plugin URI: http://www.osclass.org/
 Description: This plugin shows an OpenStreetMap on the location space of every item.
-Version: 1.0.2
+Version: 1.0.3
 Author: Oleksiy Muzalyev
 Author URI: http://forums.osclass.org/index.php?action=profile;u=37193
 Plugin update URI: openstreetmaps-maps_2
 */
+
+	/* Register and get your free API key, MAPQUEST_API_KEY, at https://developer.mapquest.com/ . It takes a minute or so. */
+
+	const MAPQUEST_API_KEY ='you_API_key_here'; // it should look like this: MAPQUEST_API_KEY ='Mf0UOnA76bfMm6Gzpqj8dFFBMGxP7KhY';
+	
+	/* ============= Do not change anything below this line. ============= */
 
 	function osm_maps_location() {
 		
@@ -67,7 +73,7 @@ Plugin update URI: openstreetmaps-maps_2
 		$address = implode ( ',', $addr_comp );
 				
 		
-		if ( $xml = simplexml_load_file ( sprintf ( 'http://open.mapquestapi.com/nominatim/v1/search.php?q=%s&format=xml&addressdetails=1&limit=1', $address ) ) ) {
+		if ( $xml = simplexml_load_file ( sprintf ( 'http://open.mapquestapi.com/nominatim/v1/search.php?key=' . MAPQUEST_API_KEY . '&q=%s&format=xml&addressdetails=1&limit=1', $address ) ) ) {
 				
 			foreach ( $xml->place as $mpl ) {
 		
@@ -91,3 +97,4 @@ Plugin update URI: openstreetmaps-maps_2
 	osc_register_plugin(osc_plugin_path(__FILE__), '') ;
 
 ?>
+
