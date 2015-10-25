@@ -11,7 +11,7 @@ Plugin update URI: openstreetmaps-maps_2
 
 	/* Register and get your free API key, MAPQUEST_API_KEY, at https://developer.mapquest.com/ . It takes a minute or so. */
 
-	const MAPQUEST_API_KEY ='you_API_key_here'; // it should look like this: MAPQUEST_API_KEY ='Mf0UOnA76bfMm6Gzpqj8dFFBMGxP7KhY';
+	const MAPQUEST_API_KEY ='your_API_key_here'; // it should look like this: MAPQUEST_API_KEY ='Mf0UOnA76bfMm6Gzpqj8dFFBMGxP7KhY';
 	
 	/* ============= Do not change anything below this line. ============= */
 
